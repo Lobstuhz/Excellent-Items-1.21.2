@@ -1,5 +1,7 @@
 package net.jevens.excellentitems;
 
+import net.jevens.excellentitems.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -39,6 +41,8 @@ public class ExcellentItems
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+        ModItems.register(modEventBus);
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -53,6 +57,10 @@ public class ExcellentItems
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.XYLITE);
+            event.accept(ModItems.PHILOSOPHERS_STONE);
+        }
 
     }
 
