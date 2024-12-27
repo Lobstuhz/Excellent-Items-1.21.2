@@ -1,5 +1,6 @@
 package net.jevens.excellentitems;
 
+import net.jevens.excellentitems.block.ModBlocks;
 import net.jevens.excellentitems.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -42,6 +43,7 @@ public class ExcellentItems
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -60,6 +62,12 @@ public class ExcellentItems
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.XYLITE);
             event.accept(ModItems.PHILOSOPHERS_STONE);
+        }
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.XYLITE_ORE);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(ModBlocks.XYLITE_BLOCK);
         }
 
     }

@@ -1,4 +1,7 @@
 {
   "item.excellentitems.xylite": "Xylite",
-  "item.excellentitems.philosophers_stone": "Philosopher's Stone"
+  "item.excellentitems.philosophers_stone": "Philosopher's Stone",
+
+  "block.excellentitems.xylite_block": "Block of Xylite",
+  "block.excellentitems.xylite_ore": "Xylite Ore"
 }
