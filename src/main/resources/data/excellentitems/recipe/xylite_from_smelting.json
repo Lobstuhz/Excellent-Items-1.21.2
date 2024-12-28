@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "gold_ingot",
+  "ingredient": {
+    "item": "excellentitems:xylite_ore"
+  },
+  "result": {
+    "id": "excellentitems:xylite"
+  }
+}
