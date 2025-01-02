@@ -3,5 +3,8 @@
   "item.excellentitems.philosophers_stone": "Philosopher's Stone",
 
   "block.excellentitems.xylite_block": "Block of Xylite",
-  "block.excellentitems.xylite_ore": "Xylite Ore"
+  "block.excellentitems.xylite_ore": "Xylite Ore",
+
+  "creativetab.excellentitems.xylite_items": "Xylite Items",
+  "creativetab.excellentitems.xylite_blocks": "Xylite Blocks"
 }

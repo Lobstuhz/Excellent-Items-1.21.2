@@ -1,6 +1,7 @@
 package net.jevens.excellentitems;
 
 import net.jevens.excellentitems.block.ModBlocks;
+import net.jevens.excellentitems.item.ModCreativeModeTabs;
 import net.jevens.excellentitems.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import org.slf4j.Logger;
@@ -44,6 +45,7 @@ public class ExcellentItems
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
